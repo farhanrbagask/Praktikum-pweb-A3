@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Gun Killer</title>
+    <title>Humas Himatif</title>
     <link rel="stylesheet" href="style.css">
-<style>
-    p{
-        text-align: center;
-    }
-</style>
-</head>
-<body>
+    <link rel="icon" href="Aset/Logo.png" type="image/x-icon"/>
+
+  </head>
+
+  <body>
+    <header>
     <nav>
-        <div class="wrapper"> 
-            <div class="logo"><a href="">MachineGunKiller.</a></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#HOME">Home</a></li>
-                    <li><a href="#TEAMS">Teams</a></li>
-                    <li><a href="#SCHEDULE">Schedule</a></li>
-                    <li><a href="#ACHIEVEMENTS">Achievments</a></li>
-                    <li><a href="#OURPONSORS">Our Sponsors</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="wrapper">
-         <section id="home">
-         <img src="3515670964.jpg"/>
-         <div class="kolom">
-            <p class="deskripsi">ESPORT TEAM </p>
-            <h1>From Gresik Jawa Timur</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, sequi. </p>
-            </div>
-        </section>
-     </div>
+       <a href="#" class="logo"> Humas Himatif <span>.</span></a>
+       <div class="menuToggle"  onclick="toggleMenu();"></div>
+       <ul class="navigation">
+            <li><a href="#BERANDA" onclick="toggleMenu();">Beranda</a></li>
+            <li><a href="#TENTANGKAMI" onclick="toggleMenu();">Tentang</a></li>
+            <li><a href="#AKTIVITASKAMI" onclick="toggleMenu();">Aktivitas</a></li>
+            <li><a href="#TIM" onclick="toggleMenu();">Tim Humas</a></li>
+            <li><a href="#KONTAKKAMI" onclick="toggleMenu();">Kontak Kami</a></li>
+        </ul>
+     </nav>
+    </header>
 
+    <main>
+        <article class="banner" id="banner">
+            <div class="content">
+                <h2>Hubungan Masyarakat</h2>
+                <p>
+                Divisi Hubungan Masyarakat (HUMAS) adalah divisi yang diarahkan pada 
+                kemampuan organisasi untuk membangun jaringan antar lembaga 
+                dan/atau birokrasi di Fakultas dan Universitas
+                </p>
+            </div>
+        </article>
+
+        <article class="about" id="about">
+            <div class="row">
+              <div class="col50">
+                <h2 class="titleText"><span>T</span>entang Kami</h2>
+                <p>
+                  Divisi Kewirausahaan memiliki beberapa program kerja salah satunya
+                  yaitu PUSAKA HIMATIF, disini kita mempunyai bidang usaha yaitu
+                  dalam bidang percetakan. Pusat alat tulis kantor himatif adalah
+                  koperasi yang menyediakan perlengkapan tulis mahasiswa maupun jasa
+                  cetak yang menunjang kebutuhan mahasiswa yang bertujuan untuk
+                  memudahkan mahasiswa dalam mencari jasa percetakan di area kampus
+                </p>
+              </div>
+              <div class="col50">
+                <div class="imgBx">
+                  <img src="Assets/img1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+        </article>
+
+
+    </main>
+    
+    <section id="gallery">
+        <h2>gallery</h1>
+        <div id="data"></div>
+    </section>
+    <form id="login">
+        <input type = "email"       name="email" placeholder="insert your email">
+        <input type = "password"    name="password" placeholder="insert your password">
+        <button type="submit">login</button>
+    </form>
+    <h1 id="status">status: <span></span></h1>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
-
-
