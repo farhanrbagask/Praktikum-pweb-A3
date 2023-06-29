@@ -55,7 +55,7 @@ header nav{
 
 header nav.sticky {
     color: white;
-    padding: 10px;
+    padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
@@ -108,18 +108,47 @@ article,aside {
     justify-content: space-between;
 }
 
-.kolom .deskripsi{
-    font-size: 5em;
-    font-weight: bold;
-    font-family: "Poppins";
-    color: white;
+.tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aktivitas .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
-h1 {
-    font-family: "Poppins";
-    font-size: 25px;
-    color: white;
-    text-align: center;
+.aktivitas .content .box{
+    width:340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.5);
 }
 
+.aktivitas .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
 
+.aktivitas .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.aktivitas .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.aktivitas .content .box .text h3{
+    font-size: bold;
+    align-items: center;
+    color: black;
+}
