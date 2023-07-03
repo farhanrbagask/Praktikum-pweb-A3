@@ -151,4 +151,15 @@ article,aside {
     font-size: bold;
     align-items: center;
     color: black;
+
+}
+.gallery{
+    margin: 100px;
+    align-items: center;
+}
+
+.gallery.login {
+    color: black;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
